@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaptionableImageView" customModule="LoveAndHiphop" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="UUt-Ks-l5O"/>
+                <outlet property="profileImageView" destination="WSw-c1-kQa" id="E5D-UX-6ok"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="473"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WSw-c1-kQa">
+                    <rect key="frame" x="0.0" y="0.0" width="324" height="356"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some caption text can go nicely right here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-gv-uxJ">
+                    <rect key="frame" x="0.0" y="356" width="324" height="117"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="117" id="VDp-gA-jjh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2cs-gv-uxJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gvr-aI-Ngg"/>
+                <constraint firstItem="WSw-c1-kQa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vlp-vO-XXW"/>
+                <constraint firstItem="2cs-gv-uxJ" firstAttribute="top" secondItem="WSw-c1-kQa" secondAttribute="bottom" id="cMU-ot-ZOx"/>
+                <constraint firstItem="WSw-c1-kQa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hEh-w1-elZ"/>
+                <constraint firstAttribute="bottom" secondItem="2cs-gv-uxJ" secondAttribute="bottom" id="hyy-lD-ocM"/>
+                <constraint firstAttribute="trailing" secondItem="2cs-gv-uxJ" secondAttribute="trailing" id="mkK-h6-85d"/>
+                <constraint firstAttribute="trailing" secondItem="WSw-c1-kQa" secondAttribute="trailing" id="uaj-gV-16G"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="0.0" y="-44.5"/>
+        </view>
+    </objects>
+</document>
